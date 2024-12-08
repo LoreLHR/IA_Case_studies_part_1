@@ -1,9 +1,9 @@
 dt_name: YOLO_Classic
 nms: 0.45
 conf: 0.5
-class_file: C:/pyppbox_v3/data/modules/yolo_classic/coco.names
-model_cfg_file: C:/pyppbox_v3/data/modules/yolo_classic/yolov4.cfg
-model_weights: C:/pyppbox_v3/data/modules/yolo_classic/yolov4.weights
+class_file: C:/Users/Loren/anaconda3/envs/pyppbox/Lib/site-packages/pyppbox/data/modules/yolo_classic/coco.names
+model_cfg_file: C:/Users/Loren/anaconda3/envs/pyppbox/Lib/site-packages/pyppbox/data/modules/yolo_classic/yolov4.cfg
+model_weights: C:/Users/Loren/anaconda3/envs/pyppbox/Lib/site-packages/pyppbox/data/modules/yolo_classic/yolov4.weights
 model_image_size: 416
 repspoint_calibration: 0.25
 ---
@@ -15,9 +15,9 @@ show_boxes: False
 device: 0
 max_det: 100
 line_width: 500
-model_file: C:/pyppbox_v3/data/modules/yolo_ultralytics/yolov8s-pose.pt
+model_file: C:/Users/Loren/anaconda3/envs/pyppbox/Lib/site-packages/pyppbox/data/modules/yolo_ultralytics/yolov8s-pose.pt
 repspoint_calibration: 0.25
 ---
 dt_name: GT
-gt_file: C:/pyppbox_v3/data/datasets/GTA_V_DATASET/ground_truth/realID_hard_high.txt
-gt_map_file: C:/pyppbox_v3/data/datasets/GTA_V_DATASET/ground_truth/input_gt_map.txt
+gt_file: C:/Users/Loren/anaconda3/envs/pyppbox/Lib/site-packages/pyppbox/data/datasets/GTA_V_DATASET/ground_truth/realID_hard_high.txt
+gt_map_file: C:/Users/Loren/anaconda3/envs/pyppbox/Lib/site-packages/pyppbox/data/datasets/GTA_V_DATASET/ground_truth/input_gt_map.txt
