@@ -1,23 +1,38 @@
-# 🐍📦 [**pyppbox**](https://github.com/rathaumons/pyppbox)
+# Group: 
 
-<div align="center">
+Lorenzo Lhoir, Maxime Cayphas, Mathias Vertenoeuil, Bastien Francotte
 
-[![Documentation](https://github.com/rathaumons/pyppbox/actions/workflows/pyppboxdocs.yaml/badge.svg)](https://github.com/rathaumons/pyppbox/actions/workflows/pyppboxdocs.yaml) [![Build PyPI](https://github.com/rathaumons/pyppbox/actions/workflows/build_pypi.yaml/badge.svg)](https://github.com/rathaumons/pyppbox/actions/workflows/build_pypi.yaml) [![Test Build](https://github.com/rathaumons/pyppbox/actions/workflows/test_build.yaml/badge.svg)](https://github.com/rathaumons/pyppbox/actions/workflows/test_build.yaml)
+# Pyppbox-Based Person Re-Identification System
 
-[![Test Core Windows](https://github.com/rathaumons/pyppbox/actions/workflows/test_core_windows.yaml/badge.svg)](https://github.com/rathaumons/pyppbox/actions/workflows/test_core_windows.yaml) [![Test Core Linux](https://github.com/rathaumons/pyppbox/actions/workflows/test_core_linux.yaml/badge.svg)](https://github.com/rathaumons/pyppbox/actions/workflows/test_core_linux.yaml) [![Test Core macOS](https://github.com/rathaumons/pyppbox/actions/workflows/test_core_macos.yaml/badge.svg)](https://github.com/rathaumons/pyppbox/actions/workflows/test_core_macos.yaml)
+This project is part of our Master's degree in Computer Vision. It demonstrates a person re-identification pipeline using **Pyppbox**, a framework designed for seamless integration of detection, tracking, and re-identification models. Our goal is to enable the registration and re-identification of individuals through real-time image capture and model training.
 
-<img src="https://raw.githubusercontent.com/rathaROG/screenshot/master/pyppbox/pyppbox_new_wide.png"><br />
+---
 
-**[📗 Documentation](https://rathaumons.github.io/pyppbox/) | [🚀 Getting started](https://rathaumons.github.io/pyppbox/getstarted.html) | [💡 Examples](https://rathaumons.github.io/pyppbox/examples.html) | [▶️ Demo](https://github.com/rathaumons/pyppbox-demo)**
+## **Project Overview**
+The system:
+1. Detects people in a video stream using Pyppbox.
+2. Prompts unknown individuals to register via the terminal.
+3. Captures images of the person for training.
+4. Trains a new re-identification model with the new individual.
+5. Updates and applies the new model dynamically during execution.
 
-</div>
+---
 
-***pyppbox*** is an all-in-one Python toolbox which can be used for detecting, tracking, and re-identifying people with only a few lines of code. It is originally made for [***PoseTReID framework***](https://github.com/rathaumons/PoseTReID_DATASET) which can effectively track specific/certain people across multiple cameras or video scenes in distributed contexts of people interaction spaces such as malls or amusement parks, etc.
+## **Key Features**
+- **Real-Time Detection and Tracking:** Detects and tracks individuals in live video.
+- **User Registration:** Prompts unknown users to register their identity.
+- **Dynamic Model Training:** Automatically retrains the person re-identification model when a new individual is added.
+- **Seamless Re-Identification:** Identifies registered individuals using the updated model.
 
-* ` pyppbox = Python + People + Toolbox `
-* Design for both short and long term people detecting, tracking, and re-identifying.
-* Integrate GUI for easy configuration and demo.
-* Support dictionary and YAML/JSON configuration.
-* Support [[GTA_V_Dataset]](https://github.com/rathaumons/PoseTReID_DATASET) -> Real-time online and offline evaluation.
-* Check our papers: 1 [[IEEE]](https://ieeexplore.ieee.org/document/9271712) | 2 [[IEEE]](https://ieeexplore.ieee.org/document/9946587) [[arxiv]](https://doi.org/10.48550/arxiv.2205.10086)
+---
 
+## **Project Structure**
+```plaintext
+├── examples/
+│   ├── main.py          # The main script for detection, tracking, and re-identification.
+├── cfg/
+│   ├── reid_model.pkl   # The latest re-identification model used by the system.
+├── person_data/
+│   ├── [User_Folders]   # Folders containing training images of each registered person.
+├── classifier/
+│   ├── model_reid_made_by_lolo.pkl  # The newly trained re-identification models.
