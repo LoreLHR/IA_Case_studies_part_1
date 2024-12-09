@@ -1,0 +1,632 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Group: &#8212; pyppbox 3.6b6 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=bba849d3"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/rtd_search_config.js"></script>
+    <script src="_static/js/rtd_sphinx_search.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="🚀 Getting Started" href="getstarted.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="3.6b6" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">🐍📦 pyppbox</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="getstarted.html">
+    🚀 Getting Started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="examples.html">
+    💡 Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="pyppbox/standalone.html">
+    Standalone Module
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="pyppbox/modules.html">
+    Supported Modules
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="pyppbox/structure.html">
+    Structure
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="pyppbox/config.html">
+    Configurations
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="pyppbox/utils.html">
+    Ultilities
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="releasenotes.html">
+    Release Notes
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/rathaumons/pyppbox" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="getstarted.html">
+    🚀 Getting Started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="examples.html">
+    💡 Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="pyppbox/standalone.html">
+    Standalone Module
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="pyppbox/modules.html">
+    Supported Modules
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="pyppbox/structure.html">
+    Structure
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="pyppbox/config.html">
+    Configurations
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="pyppbox/utils.html">
+    Ultilities
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="releasenotes.html">
+    Release Notes
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/rathaumons/pyppbox" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="group">
+<h1>Group:<a class="headerlink" href="#group" title="Link to this heading">#</a></h1>
+<p>Lorenzo Lhoir, Maxime Cayphas, Mathias Vertenoeuil, Bastien Francotte</p>
+</section>
+<section id="pyppbox-based-person-re-identification-system">
+<h1>Pyppbox-Based Person Re-Identification System<a class="headerlink" href="#pyppbox-based-person-re-identification-system" title="Link to this heading">#</a></h1>
+<p>This project is part of our Master’s degree in Computer Vision. It demonstrates a person re-identification pipeline using <strong>Pyppbox</strong>, a framework designed for seamless integration of detection, tracking, and re-identification models. Our goal is to enable the registration and re-identification of individuals through real-time image capture and model training.</p>
+<hr class="docutils" />
+<section id="project-overview">
+<h2><strong>Project Overview</strong><a class="headerlink" href="#project-overview" title="Link to this heading">#</a></h2>
+<p>The system:</p>
+<ol class="arabic simple">
+<li><p>Detects people in a video stream using Pyppbox.</p></li>
+<li><p>Prompts unknown individuals to register via the terminal.</p></li>
+<li><p>Captures images of the person for training.</p></li>
+<li><p>Trains a new re-identification model with the new individual.</p></li>
+<li><p>Updates and applies the new model dynamically during execution.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="key-features">
+<h2><strong>Key Features</strong><a class="headerlink" href="#key-features" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Real-Time Detection and Tracking:</strong> Detects and tracks individuals in live video.</p></li>
+<li><p><strong>User Registration:</strong> Prompts unknown users to register their identity.</p></li>
+<li><p><strong>Dynamic Model Training:</strong> Automatically retrains the person re-identification model when a new individual is added.</p></li>
+<li><p><strong>Seamless Re-Identification:</strong> Identifies registered individuals using the updated model.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="project-structure">
+<h2><strong>Project Structure</strong><a class="headerlink" href="#project-structure" title="Link to this heading">#</a></h2>
+<div class="highlight-plaintext notranslate"><div class="highlight"><pre><span></span>├── examples/
+├   │   ├── main.py          # The main script for detection, tracking, and re-identification.
+    ├── cfg/
+    │   ├── reid_model.pkl   # The latest re-identification model used by the system.
+    ├── person_data/
+    │   ├── [User_Folders]   # Folders containing training images of each registered person.
+    ├── classifier/
+    │   ├── model_reid_made_by_lolo.pkl  # The newly trained re-identification models.
+</pre></div>
+</div>
+</section>
+</section>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<section id="table-of-contents">
+<span id="tablecontents"></span><h1>Table of contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">🚀 Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getstarted.html#requirements">⚙️ Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getstarted.html#setup">💽 Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getstarted.html#fyi">📢 FYI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">💡 Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_01.html">Example 1: Use some basic standalone functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_02.html">Example 2: Use pyppbox’s internal config directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_03.html">Example 3: Set a custom config directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_04.html">Example 4: Set the main detector/tracker/reider by a YAML or JSON file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_05.html">Example 5: Set the main modules by a raw/ready dictionary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_06.html">Example 6: Set the main modules by names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_07.html">Example 7: Use result tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_08.html">Example 8: Use real-time evaluation tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_09.html">Example 9: Compare a generated result to a reference or ground-truth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_10.html">Example 10: Use GT (Ground-truth) as a detector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_11.html">Example 11: Train a classifier using a supported reider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_12.html">Example 12: Use a supported module directly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_13.html">Example 13: Use pyppbox in multithreading application</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyppbox/standalone.html">Standalone Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/standalone.html#pyppbox-standalone">pyppbox.standalone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/standalone.html#pyppbox-standalone-mt">pyppbox.standalone.MT</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyppbox/modules.html">Supported Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/modules/detectors.html">Supported Detectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/modules/trackers.html">Supported Trackers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/modules/reiders.html">Supported ReIDers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyppbox/structure.html">Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/structure.html#base-structure-of-pyppbox">Base Structure of <code class="docutils literal notranslate"><span class="pre">pyppbox</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/structure.html#data-pyppbox-data-and-pyppbox-data-gta5">Data: <code class="docutils literal notranslate"><span class="pre">pyppbox-data</span></code> and <code class="docutils literal notranslate"><span class="pre">pyppbox-data-gta5</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyppbox/config.html">Configurations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/config.html#module-pyppbox.gui.guitools">pyppbox.gui.guitools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/config.html#module-pyppbox.config.configtools">pyppbox.config.configtools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/config.html#module-pyppbox.config.myconfig">pyppbox.config.myconfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/config.html#module-pyppbox.config.unifiedstrings">pyppbox.config.unifiedstrings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyppbox/utils.html">Ultilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/utils.html#module-pyppbox.utils.evatools">pyppbox.utils.evatools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/utils.html#module-pyppbox.utils.gttools">pyppbox.utils.gttools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/utils.html#module-pyppbox.utils.logtools">pyppbox.utils.logtools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/utils.html#module-pyppbox.utils.mot2pyppbox">pyppbox.utils.mot2pyppbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/utils.html#module-pyppbox.utils.persontools">pyppbox.utils.persontools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/utils.html#module-pyppbox.utils.restools">pyppbox.utils.restools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyppbox/utils.html#module-pyppbox.utils.visualizetools">pyppbox.utils.visualizetools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="releasenotes.html#pyppbox-v4-even-smaller"><strong>pyppbox V4 - Even Smaller</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="releasenotes.html#pyppbox-v3-make-simpler-and-faster"><strong>pyppbox V3 - Make Simpler and Faster</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="releasenotes.html#pyppbox-v2-hello-ultralytics-yolov8"><strong>pyppbox V2 - Hello Ultralytics YOLOv8</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="releasenotes.html#pyppbox-v1-1-multithreading-ready"><strong>pyppbox V1.1 - Multithreading Ready</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="releasenotes.html#pyppbox-v1"><strong>pyppbox V1</strong></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="getstarted.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">🚀 Getting Started</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Group:</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pyppbox-based-person-re-identification-system">Pyppbox-Based Person Re-Identification System</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-overview"><strong>Project Overview</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features"><strong>Key Features</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-structure"><strong>Project Structure</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of contents</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, UMONS-Numediart, Ratha SIV.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
