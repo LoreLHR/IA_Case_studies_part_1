@@ -29,10 +29,10 @@ The system:
 ## **Project Structure**
 ```plaintext
 ├── examples/
-│   ├── main.py          # The main script for detection, tracking, and re-identification.
-├── cfg/
-│   ├── reid_model.pkl   # The latest re-identification model used by the system.
-├── person_data/
-│   ├── [User_Folders]   # Folders containing training images of each registered person.
-├── classifier/
-│   ├── model_reid_made_by_lolo.pkl  # The newly trained re-identification models.
+├   │   ├── main.py          # The main script for detection, tracking, and re-identification.
+    ├── cfg/
+    │   ├── reid_model.pkl   # The latest re-identification model used by the system.
+    ├── person_data/
+    │   ├── [User_Folders]   # Folders containing training images of each registered person.
+    ├── classifier/
+    │   ├── model_reid_made_by_lolo.pkl  # The newly trained re-identification models.
